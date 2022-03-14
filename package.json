@@ -1,0 +1,42 @@
+{
+  "name": "typescript-koa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tslint --project tsconfig.json --format stylish",
+    "build": "tsc",
+    "serve": "ts-node src/server.ts",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inez-Mugure/typescript-koa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Inez-Mugure/typescript-koa/issues"
+  },
+  "homepage": "https://github.com/Inez-Mugure/typescript-koa#readme",
+  "devDependencies": {
+    "@types/http-status-codes": "^1.2.0",
+    "@types/koa": "^2.13.4",
+    "@types/koa-bodyparser": "^4.3.6",
+    "@types/koa-router": "^7.4.4",
+    "@types/node": "^17.0.21",
+    "http-status-codes": "^2.2.0",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.1.1",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^10.7.0",
+    "tslint": "^5.20.1",
+    "tslint-config-airbnb": "^5.11.2",
+    "typeorm": "^0.2.45",
+    "typescript": "^3.9.10"
+  }
+}
