@@ -1,6 +1,9 @@
 # typescript-koa
 ## https://inviqa.com/blog/how-build-basic-api-typescript-koa-and-typeorm
 
+## what is the project about
+- create a simple API that stores movie names, release years, and a numeric rating. 
+- The data will then be stored in PostgreSQL using TypeORM, a TypeScript-friendly data mapper.
 ## step by step process of setting up this project
  
  ### Node basics
