@@ -11,6 +11,8 @@ services:
       - "5432:5432"
     environment:
       POSTGRES_DB: typescript-koa
+      POSTGRES_PASSWORD: typescript-koa
+      POSTGRES_USER: Inez
 
   adminer:
     image: adminer:latest

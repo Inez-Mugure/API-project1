@@ -1,8 +1,9 @@
 import * as Koa from 'koa';
 import * as Router from 'koa-router';
 import { getRepository, Repository } from 'typeorm';
-import movieEntity from './movie.entity';
 import * as HttpStatus from 'http-status-codes';
+import movieEntity from '../models/movie.entity';
+import { Movie } from '../models/types';
 
 const routerOpts: Router.IRouterOptions = {
   prefix: '/movies',
@@ -46,11 +47,18 @@ router.post('/', async (ctx:Koa.Context) => {
   // Get the movie repository from TypeORM.
   const movieRepo:Repository<movieEntity> = getRepository(movieEntity);
 
+  const {body}=ctx.request
+  const movie: Movie = {
+    name: body.name,
+    releaseYear: body.releaseYear,
+    rating: body.rating
+  }
+
   // Create our new movie.
-  const movie: movieEntity = movieRepo.create(ctx.request.body);
+  const movieParams: movieEntity = movieRepo.create(movie);
 
   // Persist it to the database.
-  await movieRepo.save(movie);
+  await movieRepo.save(movieParams);
 
   // Set the status to 201.
 

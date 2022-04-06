@@ -1,6 +1,6 @@
 import * as Koa from 'koa';
 import * as HttpStatus from 'http-status-codes';
-import movieController from '../movie/movie.controller';
+import movieController from './controllers/movie.controller';
 import * as bodyParser from 'koa-bodyparser';
 
 

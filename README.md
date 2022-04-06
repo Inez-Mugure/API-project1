@@ -1,5 +1,6 @@
 # typescript-koa
 ## https://inviqa.com/blog/how-build-basic-api-typescript-koa-and-typeorm
+## http://127.0.0.1:8080/?pgsql=database&username=Inez&db=typescript-koa&ns=public
 
 ## what is the project about
 - create a simple API that stores movie names, release years, and a numeric rating. 
