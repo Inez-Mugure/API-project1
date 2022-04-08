@@ -7,9 +7,9 @@ const connectionOpts: ConnectionOptions = {
   type: 'postgres',
   host: process.env.DB_HOST || 'localhost',
   port: Number(process.env.DB_PORT) || 5432,
-  username: process.env.DB_USERNAME || 'Inez',
-  password: process.env.DB_PASSWORD || 'typescript-koa',
-  database: process.env.DB_NAME || 'typescript-koa',
+  username: process.env.DB_USERNAME,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
   entities: [
     `${parentDir}/**/*.entity.ts`,
   ],

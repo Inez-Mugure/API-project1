@@ -38,5 +38,8 @@
     "tslint-config-airbnb": "^5.11.2",
     "typeorm": "^0.2.45",
     "typescript": "^3.9.10"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
   }
 }

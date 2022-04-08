@@ -2,6 +2,12 @@ version: '3'
 
 services:
 
+  #  secrets:
+  #   - my_secrets
+  #  secrets:
+  #   my_secrets:
+  #    file: ./secrets.txt
+
   database:
     image: postgres:11-alpine
     restart: always
